@@ -157,11 +157,13 @@ import React from "react"
 import {Text , StyleSheet , View } from "react-native";
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
+import DetailScreen from "./src/screens/detailScreen/DetailScreen";
 import HomeScreen from "./src/screens/homeScreen/HomeScreen";
 
 const navigator = createStackNavigator(
   {
-    Home : HomeScreen
+    Home : HomeScreen,
+    Detail : DetailScreen
   }, 
   {
     initialRouteName : 'Home',
